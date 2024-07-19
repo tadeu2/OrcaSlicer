@@ -522,7 +522,7 @@ msgstr ""
 msgid "Cut by Plane"
 msgstr ""
 
-msgid "non-manifold edges be caused by cut tool, do you want to fix it now?"
+msgid "Non-manifold edges be caused by cut tool, do you want to fix it now?"
 msgstr ""
 
 msgid "Repairing model object"
@@ -1872,31 +1872,31 @@ msgstr ""
 msgid "Select All"
 msgstr ""
 
-msgid "select all objects on current plate"
+msgid "Select all objects on current plate"
 msgstr ""
 
 msgid "Delete All"
 msgstr ""
 
-msgid "delete all objects on current plate"
+msgid "Delete all objects on current plate"
 msgstr ""
 
 msgid "Arrange"
 msgstr ""
 
-msgid "arrange current plate"
+msgid "Arrange current plate"
 msgstr ""
 
 msgid "Reload All"
 msgstr ""
 
-msgid "reload all from disk"
+msgid "Reload all from disk"
 msgstr ""
 
 msgid "Auto Rotate"
 msgstr ""
 
-msgid "auto rotate current plate"
+msgid "Auto rotate current plate"
 msgstr ""
 
 msgid "Delete Plate"
@@ -3148,7 +3148,7 @@ msgstr ""
 msgid "Incompatible"
 msgstr ""
 
-msgid "syncing"
+msgid "Syncing"
 msgstr ""
 
 msgid "Printing Finish"
@@ -5163,7 +5163,7 @@ msgstr ""
 msgid "Upload failed\n"
 msgstr ""
 
-msgid "obtaining instance_id failed\n"
+msgid "Obtaining instance_id failed\n"
 msgstr ""
 
 msgid ""
@@ -5172,7 +5172,7 @@ msgid ""
 "  error code: "
 msgstr ""
 
-msgid "error message: "
+msgid "Error message: "
 msgstr ""
 
 msgid ""
@@ -5791,7 +5791,7 @@ msgstr ""
 msgid "Please select a file"
 msgstr ""
 
-msgid "Do you want to replace it"
+msgid "Do you want to replace it?"
 msgstr ""
 
 msgid "Message"
@@ -6319,7 +6319,7 @@ msgid ""
 "Backup your project periodically for restoring from the occasional crash."
 msgstr ""
 
-msgid "every"
+msgid "Every"
 msgstr ""
 
 msgid "The peroid of backup in seconds."
@@ -6667,7 +6667,7 @@ msgstr ""
 msgid "Click here if you can't connect to the printer"
 msgstr ""
 
-msgid "send completed"
+msgid "Send completed"
 msgstr ""
 
 msgid "Error code"
@@ -6783,11 +6783,11 @@ msgid ""
 msgstr ""
 
 #, possible-c-format, possible-boost-format
-msgid "nozzle in preset: %s %s"
+msgid "Nozzle in preset: %s %s"
 msgstr ""
 
 #, possible-c-format, possible-boost-format
-msgid "nozzle memorized: %.2f %s"
+msgid "Nozzle memorized: %.2f %s"
 msgstr ""
 
 msgid ""
