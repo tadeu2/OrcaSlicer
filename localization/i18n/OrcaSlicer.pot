@@ -3277,10 +3277,10 @@ msgstr ""
 msgid "Name is invalid;"
 msgstr ""
 
-msgid "illegal characters:"
+msgid "Illegal characters:"
 msgstr ""
 
-msgid "illegal suffix:"
+msgid "Illegal suffix:"
 msgstr ""
 
 msgid "The name is not allowed to be empty."
@@ -8099,7 +8099,7 @@ msgstr ""
 msgid "Done"
 msgstr ""
 
-msgid "resume"
+msgid "Resume"
 msgstr ""
 
 msgid "Resume Printing"
@@ -11595,7 +11595,7 @@ msgstr ""
 msgid "Normal(manual)"
 msgstr ""
 
-msgid "tree(manual)"
+msgid "Tree(manual)"
 msgstr ""
 
 msgid "Support/object xy distance"
