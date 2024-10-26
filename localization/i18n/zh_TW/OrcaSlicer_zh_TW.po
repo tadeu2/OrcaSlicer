@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orca Slicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 16:32+0200\n"
+"POT-Creation-Date: 2024-09-25 19:57+0800\n"
 "PO-Revision-Date: 2023-11-06 14:37+0800\n"
 "Last-Translator: ablegods <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -4752,6 +4752,12 @@ msgstr "複製所選項目"
 msgid "Clone copies of selections"
 msgstr "複製多份所選項目"
 
+msgid "Duplicate Current Plate"
+msgstr ""
+
+msgid "Duplicate the current plate"
+msgstr ""
+
 msgid "Select all"
 msgstr "選取所有"
 
@@ -5827,6 +5833,9 @@ msgid "Lock current plate"
 msgstr "鎖定列印板"
 
 msgid "Edit current plate name"
+msgstr ""
+
+msgid "Move plate to the front"
 msgstr ""
 
 #, fuzzy
@@ -7728,6 +7737,14 @@ msgid ""
 "does not support to print on the Cool Plate"
 msgstr "使用低溫列印板時的熱床溫度。0 值表示這個線材不支援低溫列印板"
 
+msgid "Textured Cool plate"
+msgstr ""
+
+msgid ""
+"Bed temperature when cool plate is installed. Value 0 means the filament "
+"does not support to print on the Textured Cool Plate"
+msgstr ""
+
 #, fuzzy
 msgid "Engineering plate"
 msgstr "工程高溫列印板"
@@ -9526,6 +9543,11 @@ msgstr "除首層外的床溫。0 值表示這個線材不支援低溫列印板"
 msgid "°C"
 msgstr "°C"
 
+msgid ""
+"Bed temperature for layers except the initial one. Value 0 means the "
+"filament does not support to print on the Textured Cool Plate"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "Bed temperature for layers except the initial one. Value 0 means the "
@@ -9556,6 +9578,11 @@ msgid ""
 "support to print on the Cool Plate"
 msgstr "首層熱床溫度。0 值表示這個線材不支援低溫列印板"
 
+msgid ""
+"Bed temperature of the initial layer. Value 0 means the filament does not "
+"support to print on the Textured Cool Plate"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "Bed temperature of the initial layer. Value 0 means the filament does not "
@@ -9578,13 +9605,18 @@ msgstr "首層熱床溫度。0 值表示這個線材不支援金屬紋理 PEI �
 msgid "Bed types supported by the printer"
 msgstr "列印設備所支援的列印板類型"
 
-#, fuzzy
-msgid "Cool Plate"
-msgstr "低溫列印板"
+msgid "Smooth Cool Plate"
+msgstr ""
 
 #, fuzzy
 msgid "Engineering Plate"
 msgstr "工程高溫列印板"
+
+msgid "Smooth High Temp Plate"
+msgstr ""
+
+msgid "Textured Cool Plate"
+msgstr ""
 
 msgid "First layer print sequence"
 msgstr "首層列印順序"
@@ -9822,9 +9854,8 @@ msgid ""
 "bridges cannot be anchored. "
 msgstr "在陡峭的懸空和無法固定橋接的區域中增加額外的周長路徑。"
 
-#, fuzzy
-msgid "Reverse on odd"
-msgstr "反轉奇數層懸空方向"
+msgid "Reverse on even"
+msgstr ""
 
 #, fuzzy
 msgid "Overhang reversal"
@@ -9832,7 +9863,7 @@ msgstr "懸空反轉"
 
 msgid ""
 "Extrude perimeters that have a part over an overhang in the reverse "
-"direction on odd layers. This alternating pattern can drastically improve "
+"direction on even layers. This alternating pattern can drastically improve "
 "steep overhangs.\n"
 "\n"
 "This setting can also help reduce part warping due to the reduction of "
@@ -9854,7 +9885,7 @@ msgid ""
 "\n"
 "For this setting to be the most effective, it is recommended to set the "
 "Reverse Threshold to 0 so that all internal walls print in alternating "
-"directions on odd layers irrespective of their overhang degree."
+"directions on even layers irrespective of their overhang degree."
 msgstr ""
 
 msgid "Bridge counterbore holes"
@@ -9884,10 +9915,8 @@ msgstr "懸空反轉臨界值"
 msgid ""
 "Number of mm the overhang need to be for the reversal to be considered "
 "useful. Can be a % of the perimeter width.\n"
-"Value 0 enables reversal on every odd layers regardless."
+"Value 0 enables reversal on every even layers regardless."
 msgstr ""
-"判定懸空反轉需要的值（mm），可以是線寬的百分比。\n"
-" 0 值則會在每個奇數層上啟用反向。"
 
 msgid "Classic mode"
 msgstr "經典模式"
@@ -9906,7 +9935,7 @@ msgstr "打開這個選項將降低不同懸垂程度的走線的列印速度"
 msgid "Slow down for curled perimeters"
 msgstr "翹邊降速"
 
-#, c-format, boost-format
+#, no-c-format, no-boost-format
 msgid ""
 "Enable this option to slow down printing in areas where perimeters may have "
 "curled upwards.For example, additional slowdown will be applied when "
@@ -9922,9 +9951,9 @@ msgid ""
 "\n"
 "Note: When this option is enabled, overhang perimeters are treated like "
 "overhangs, meaning the overhang speed is applied even if the overhanging "
-"perimeter is part of a bridge. For example, when the perimeters are "
-"100% overhanging, with no wall supporting them from underneath, the "
-"100% overhang speed will be applied."
+"perimeter is part of a bridge. For example, when the perimeters are 100% "
+"overhanging, with no wall supporting them from underneath, the 100% overhang "
+"speed will be applied."
 msgstr ""
 
 msgid "mm/s or %"
@@ -10385,8 +10414,8 @@ msgid ""
 "top.\n"
 "\n"
 "By default all walls are extruded in counter-clockwise, unless Reverse on "
-"odd is enabled. Set this to any option other than Auto will force the wall "
-"direction regardless of the Reverse on odd.\n"
+"even is enabled. Set this to any option other than Auto will force the wall "
+"direction regardless of the Reverse on even.\n"
 "\n"
 "This option will be disabled if spiral vase mode is enabled."
 msgstr ""
@@ -10519,7 +10548,7 @@ msgstr "壓力提前（Klipper）或者線性提前（Marlin）"
 msgid "Enable adaptive pressure advance (beta)"
 msgstr ""
 
-#, c-format, boost-format
+#, no-c-format, no-boost-format
 msgid ""
 "With increasing print speeds (and hence increasing volumetric flow through "
 "the nozzle) and increasing accelerations, it has been observed that the "
@@ -10544,6 +10573,7 @@ msgstr ""
 msgid "Adaptive pressure advance measurements (beta)"
 msgstr ""
 
+#, no-c-format, no-boost-format
 msgid ""
 "Add sets of pressure advance (PA) values, the volumetric flow speeds and "
 "accelerations they were measured at, separated by a comma. One set of values "
@@ -16113,6 +16143,23 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Cool Plate"
+#~ msgstr "低溫列印板"
+
+#, fuzzy
+#~ msgid "Reverse on odd"
+#~ msgstr "反轉奇數層懸空方向"
+
+#, no-c-format, no-boost-format
+#~ msgid ""
+#~ "Number of mm the overhang need to be for the reversal to be considered "
+#~ "useful. Can be a % of the perimeter width.\n"
+#~ "Value 0 enables reversal on every odd layers regardless."
+#~ msgstr ""
+#~ "判定懸空反轉需要的值（mm），可以是線寬的百分比。\n"
+#~ " 0 值則會在每個奇數層上啟用反向。"
 
 #, fuzzy
 #~ msgid ""
